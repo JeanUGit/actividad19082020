@@ -4,7 +4,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-!(function($) {
+function initComponent($) {
   "use strict";
 
   // Preloader
@@ -186,4 +186,27 @@
     aos_init();
   });
 
-})(jQuery);
+};
+
+const $templatepage = document.getElementById("templatePage").content.cloneNode(true);
+const $divMain = document.getElementById("divMain");
+
+async function Fnt_listarDatos(){
+  try{
+    const peticion = await fetch("js/data.json");
+    const dataJson = await peticion.json();
+    console.log(dataJson);
+  }
+  catch(e){
+    console.log(e);
+  }
+  
+};
+
+
+
+document.addEventListener("DOMContentLoaded", async ()=>{
+  Fnt_listarDatos();
+  $divMain.appendChild($templatepage);
+  initComponent(jQuery);
+});

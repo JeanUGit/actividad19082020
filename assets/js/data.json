@@ -1,0 +1,31 @@
+{
+    "presentacion":"Estudiante de ingeniería en sistemas con habilidades en programación de escritorio con visual studio utilizando C Sharp y Asp.net, bases de datos Sql.\nDiseño y arquitectura de software e implementación de metodologías ágiles.\nManejo de segunda lengua (inglés) nivel B1 según el marco común europeo. \nConocimientos básicos en coordinación de trabajo haciendo uso del controlador de versiones Git, programación web con html, css y javascript. Acercamiento básico en desarrollo móvil implementando el lenguaje Dart y Flutter Framework. \nAptitud de adaptabilidad, aprendizaje rápido y trabajo colaborativo. Fundamentados por el respeto, la responsabilidad y honestidad.",
+    "habilidades":["Dart","Python","Html","Css","JavaScript","Flutter","Git","C#"],
+    "Formacion":{
+        "primaria":"Intitución Educativa Madre laura",
+        "bachiller":"Intitución Educativa Los Andes",
+        "pregrado":["Tecnologia en sistemas","Ingeniería de sistemas"],
+        "noFormal":[
+            "Diplomado en educación Virtual",
+            "Diplomado en pedagogia humana",
+            "Curso en EDteam",
+            "Curso en Udemy",
+            "Curso en Platzi",
+            "Curso en Youtube"
+        ]
+    },
+
+    "Idiomas":[
+        "Español - lengua Nativa",
+        "Inglés  - Intermedio"
+    ],
+    "contacto":{
+        "ubicacion":"Colombia",
+        "redessociales": {
+            "Facebook":"<a class='btn btn-outline-light btn-social mx-1' href='#!'><i class='fab fa-facebook'></i></a>",
+            "Twitter":"<a class='btn btn-outline-light btn-social mx-1' href='#!'><i class='fab fa-twitter'></i></a>",
+            "Youtube":"<a class='btn btn-outline-light btn-social mx-1' href='#!'><i class='fab fa-youtube'></i></a>"
+        },
+        "telefonos": "82800156 - 3209469635"
+    }
+}
