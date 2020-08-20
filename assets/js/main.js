@@ -193,9 +193,31 @@ const $divMain = document.getElementById("divMain");
 
 async function Fnt_listarDatos(){
   try{
-    const peticion = await fetch("js/data.json");
+    const peticion = await fetch("assets/js/data.json");
     const dataJson = await peticion.json();
     console.log(dataJson);
+
+    //Cargamos la información de la PRESENTACIÓN
+     $divMain.querySelector("[ data-subsection='presentacion']").innerHTML = dataJson.presentacion;
+    
+    //Cargamos la información de las HABILIDADES
+    $habilidades = $divMain.querySelector("[data-subsection='habilidades']");
+    const items = document.createElement("div");
+    items.classList.add("row");
+    var anchor = 50;
+    dataJson.habilidades.forEach((element) => {
+     items.innerHTML += `<div class='col-lg-3 col-md-4 mt-4'>
+                          <div class='icon-box' data-aos='zoom-in' data-aos-delay="${anchor}">
+                            <i class='${element.logo}' style='color: ${element.color};'></i>
+                            <h3><a href=''>${element.habilidad}</a></h3>
+                          </div>
+                        </div>` ;
+      anchor += 50; 
+      console.log(anchor);
+    });
+    $habilidades.appendChild(items);
+
+
   }
   catch(e){
     console.log(e);
@@ -206,7 +228,7 @@ async function Fnt_listarDatos(){
 
 
 document.addEventListener("DOMContentLoaded", async ()=>{
-  Fnt_listarDatos();
   $divMain.appendChild($templatepage);
   initComponent(jQuery);
+  Fnt_listarDatos();
 });

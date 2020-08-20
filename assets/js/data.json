@@ -1,6 +1,48 @@
 {
     "presentacion":"Estudiante de ingeniería en sistemas con habilidades en programación de escritorio con visual studio utilizando C Sharp y Asp.net, bases de datos Sql.\nDiseño y arquitectura de software e implementación de metodologías ágiles.\nManejo de segunda lengua (inglés) nivel B1 según el marco común europeo. \nConocimientos básicos en coordinación de trabajo haciendo uso del controlador de versiones Git, programación web con html, css y javascript. Acercamiento básico en desarrollo móvil implementando el lenguaje Dart y Flutter Framework. \nAptitud de adaptabilidad, aprendizaje rápido y trabajo colaborativo. Fundamentados por el respeto, la responsabilidad y honestidad.",
-    "habilidades":["Dart","Python","Html","Css","JavaScript","Flutter","Git","C#"],
+    "habilidades":[
+        {
+            "logo":"fas fa-laptop-code",
+            "habilidad":"Dart",
+            "color":"#5578ff"
+        },
+        {
+            "logo":"fab fa-python",
+            "habilidad":"Python",
+            "color":"#ffbb2c"
+
+        },
+        {
+            "logo":"fab fa-html5",
+            "habilidad":"Html",
+            "color":"#e80368"
+        },
+        {
+            "logo":"fab fa-css3",
+            "habilidad":"Css",
+            "color":"#47aeff"
+        },
+        {
+            "logo":"fab fa-js",
+            "habilidad":"JavaScript",
+            "color":"#ffbb2c"
+        },
+        {
+            "logo":"fas fa-mobile-alt",
+            "habilidad":"Flutter",
+            "color":"#5578ff"
+        },
+        {   
+           "logo":"fab fa-git-square",
+            "habilidad":"Git",
+            "color":"#ff5828"
+        },
+        {
+            "logo":"fas fa-code",
+            "habilidad":"C#",
+            "color":"#e361ff"
+        }
+    ],
     "Formacion":{
         "primaria":"Intitución Educativa Madre laura",
         "bachiller":"Intitución Educativa Los Andes",
