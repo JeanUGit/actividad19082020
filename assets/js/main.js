@@ -213,11 +213,65 @@ async function Fnt_listarDatos(){
                           </div>
                         </div>` ;
       anchor += 50; 
-      console.log(anchor);
     });
     $habilidades.appendChild(items);
 
     //Cargamos la informaciín de la FORMACIÓN ACADEMICA
+    $formacion = $divMain.querySelector("[data-subsection='formacion']");
+    dataJson.Formacion.forEach((value)=>{
+      const itemFormacion = document.createElement("div");
+      itemFormacion.classList.add("testimonial-item");
+      itemFormacion.innerHTML = 
+      ` <div class='col-lg-20 col-md-15 mt-4'>
+          <div class='icon-box' data-aos='zoom-in' data-aos-delay="${anchor}">
+            <img src="assets/img/testimonials/${value.imagen}" class="testimonial-img" alt="">
+            <h3>${value.tipo}</h3>
+            <h4>${value.Lugar}</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                ${value.lema}
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+        </div>`;
+        $formacion.appendChild(itemFormacion)
+        anchor += 50; 
+    });
+
+    //Cargamos la información de los IDIOMAS
+    $idiomas = $divMain.querySelector("[data-subsection='idiomas']");
+    dataJson.Idiomas.forEach(value=>{
+        const item = document.createElement("div");
+        item.classList.add("col-lg-3");
+        item.classList.add("col-md-6");
+        item.innerHTML = `<div class="member" data-aos="zoom-in" data-aos-delay="100">
+                              <div class="pic"><img src="assets/img/team/${value[1]}" class="img-fluid" alt=""></div>
+                              <div class="member-info">
+                                <h4>${value[0]}</h4>
+                                <div class="social">
+                                  <a href=""><i class="icofont-twitter"></i></a>
+                                  <a href=""><i class="icofont-facebook"></i></a>
+                                  <a href=""><i class="icofont-instagram"></i></a>
+                                  <a href=""><i class="icofont-linkedin"></i></a>
+                                </div>
+                              </div>
+                            </div>`;
+        $idiomas.appendChild(item); 
+    });
+
+  //Cargamos la informacion de Contacto
+  //ubicacion
+   $divMain.querySelector("#location").innerHTML = `<p>${dataJson.contacto.ubicacion}</p>`;
+   //redes Sociales
+   const item = document.createElement("div");
+   item.classList.add("container");
+   item.innerHTML += `<p>${dataJson.contacto.redessociales["Facebook"]}</p>`;
+   item.innerHTML += `<p>${dataJson.contacto.redessociales["Twitter"]}</p>`;
+   item.innerHTML += `<p>${dataJson.contacto.redessociales["Youtube"]}</p>`;
+   $divMain.querySelector("[data-subsection='social']").appendChild(item);
+   //telefono
+   $divMain.querySelector("[data-subsection='phone']").innerHTML = `<p>${dataJson.contacto.telefonos}</p>`;
+   
 
   }
   catch(e){
@@ -231,5 +285,40 @@ async function Fnt_listarDatos(){
 document.addEventListener("DOMContentLoaded", async ()=>{
   $divMain.appendChild($templatepage);
   initComponent(jQuery);
-  Fnt_listarDatos();
+  await Fnt_listarDatos();
+  
+  
+ 
 });
+
+
+/*
+
+  <div class='col-lg-3 col-md-4 mt-4'>
+    <div class='icon-box' data-aos='zoom-in' data-aos-delay="${anchor}">
+      <img src="assets/img/testimonials/${value.imagen}" class="testimonial-img" alt="">
+      <h3>${value.tipo}</h3>
+      <h4>${value.Lugar}</h4>
+      <p>
+        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+          ${value.lema}
+        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+      </p>
+    </div>
+  </div>` 
+
+
+
+  {
+      "tipo":"Pregrado",
+      "Lugar":"Universidad Católica Luis Amigó",
+      "imagen":"Logo_funlam.png",
+      "lema":"Formación humana y profesional al servicio del desarrollo y la transformación social"
+  }
+
+
+  
+  {"noFormal":[
+      
+  ]}
+*/ 

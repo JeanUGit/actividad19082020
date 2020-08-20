@@ -43,31 +43,51 @@
             "color":"#e361ff"
         }
     ],
-    "Formacion":{
-        "primaria":"Intitución Educativa Madre laura",
-        "bachiller":"Intitución Educativa Los Andes",
-        "pregrado":["Tecnologia en sistemas","Ingeniería de sistemas"],
-        "noFormal":[
-            "Diplomado en educación Virtual",
-            "Diplomado en pedagogia humana",
-            "Curso en EDteam",
-            "Curso en Udemy",
-            "Curso en Platzi",
-            "Curso en Youtube"
-        ]
-    },
-
+    "Formacion":[
+        {
+            "tipo":"Primaria",
+            "Lugar":"Intitución Educativa Madre laura",
+            "imagen":"logo_madrelaura.jpg",
+            "lema":"¡Al que madruga Dios Le ayuda!"
+        },
+        {
+            "tipo":"Bachiller",
+            "Lugar":"Intitución Educativa Los Andes",
+            "imagen":"fondo1.jpeg",
+            "lema":"¡Ay Dios Mio!"
+        },
+        {
+            "tipo":"Pregrado",
+            "Lugar":"Universidad Católica Luis Amigó",
+            "imagen":"Logo_funlam.png",
+            "lema":"Formación humana y profesional al servicio del desarrollo y la transformación social"
+        },
+        {
+            "tipo":"Educación No formal",
+            "Lugar":"Curso en Youtube",
+            "imagen":"log-youtube.jpg",
+            "lema":"¡Si con youtube no puedes, el estudio no es lo tuyo!"
+        },
+        {
+            "tipo":"Educación No formal",
+            "Lugar":"Curso en Inglés",
+            "imagen":"ingles-logo.png",
+            "lema":"LEARNING WITH US!"
+        }
+        
+    ],
     "Idiomas":[
-        "Español - lengua Nativa",
-        "Inglés  - Intermedio"
+        ["Español - lengua Nativa","español.jpg"],
+        ["Inglés  - Intermedio","ingles.jpg"]
     ],
     "contacto":{
         "ubicacion":"Colombia",
         "redessociales": {
-            "Facebook":"<a class='btn btn-outline-light btn-social mx-1' href='#!'><i class='fab fa-facebook'></i></a>",
-            "Twitter":"<a class='btn btn-outline-light btn-social mx-1' href='#!'><i class='fab fa-twitter'></i></a>",
-            "Youtube":"<a class='btn btn-outline-light btn-social mx-1' href='#!'><i class='fab fa-youtube'></i></a>"
+            "Facebook":"<a class='btn btn-outline-light btn-social mx-1' href='#!'><i class='icofont-facebook'></i>Facebook</a>",
+            "Twitter":"<a class='btn btn-outline-light btn-social mx-1' href='#!'><i class='icofont-twitter'></i> Twitter</a>",
+            "Youtube":"<a class='btn btn-outline-light btn-social mx-1' href='#!'><i class='icofont-brand-youtube'></i>Youtube</a>"
         },
         "telefonos": "82800156 - 3209469635"
     }
 }
+
