@@ -217,6 +217,7 @@ async function Fnt_listarDatos(){
     });
     $habilidades.appendChild(items);
 
+    //Cargamos la informaciín de la FORMACIÓN ACADEMICA
 
   }
   catch(e){
