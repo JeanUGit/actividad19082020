@@ -621,6 +621,10 @@ section {
   font-family: "Poppins", sans-serif;
 }
 
+.testimonials .section-title .formacioAcademica{
+  color:#fff;
+}
+
 .section-title h2::after {
   content: "";
   width: 120px;

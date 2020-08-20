@@ -1,5 +1,5 @@
 {
-    "presentacion":"Estudiante de ingeniería en sistemas con habilidades en programación de escritorio con visual studio utilizando C Sharp y Asp.net, bases de datos Sql.\nDiseño y arquitectura de software e implementación de metodologías ágiles.\nManejo de segunda lengua (inglés) nivel B1 según el marco común europeo. \nConocimientos básicos en coordinación de trabajo haciendo uso del controlador de versiones Git, programación web con html, css y javascript. Acercamiento básico en desarrollo móvil implementando el lenguaje Dart y Flutter Framework. \nAptitud de adaptabilidad, aprendizaje rápido y trabajo colaborativo. Fundamentados por el respeto, la responsabilidad y honestidad.",
+    "presentacion":"Estudiante de ingeniería en sistemas con habilidades en programación de escritorio con C# y Asp.net, bases de datos Sql.\nDiseño y arquitectura de software e implementación de metodologías ágiles.\nManejo de segunda lengua (inglés) nivel B1 según el marco común europeo. \nConocimientos básicos en coordinación de trabajo haciendo uso del controlador de versiones Git, programación web con html, css y javascript. Acercamiento básico en desarrollo móvil implementando el lenguaje Dart y Flutter Framework. \nAptitud de adaptabilidad, aprendizaje rápido y trabajo colaborativo. Fundamentados por el respeto, la responsabilidad y honestidad.",
     "habilidades":[
         {
             "logo":"fas fa-laptop-code",
@@ -75,6 +75,7 @@
             "lema":"LEARNING WITH US!"
         }
         
+        
     ],
     "Idiomas":[
         ["Español - lengua Nativa","español.jpg"],
@@ -87,7 +88,7 @@
             "Twitter":"<a class='btn btn-outline-light btn-social mx-1' href='#!'><i class='icofont-twitter'></i> Twitter</a>",
             "Youtube":"<a class='btn btn-outline-light btn-social mx-1' href='#!'><i class='icofont-brand-youtube'></i>Youtube</a>"
         },
-        "telefonos": "82800156 - 3209469635"
+        "telefonos": "80002302 - 32321233"
     }
 }
 
